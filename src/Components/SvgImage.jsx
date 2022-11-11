@@ -1,6 +1,8 @@
 const SvgImage = ({ data, customClass }) => {
   return (
-    <object data={data} type="image/svg+xml" className={customClass}></object>
+    <div className={customClass}>
+      <object data={data} type="image/svg+xml" className="w-full" />
+    </div>
   );
 };
 

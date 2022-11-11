@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   body {
-    @apply bg-white text-dark;
+    @apply bg-white text-dark font-rose;
   }
 
   a {
@@ -15,15 +17,33 @@
     @apply my-20;
   }
 
+  h1,
+  h2,
+  h3 {
+    @apply font-bold;
+  }
+
   .btn {
     @apply bg-primary px-6 py-4 rounded-lg text-white;
   }
 
   .layout {
-    @apply px-8 py-4 lg:px-24;
+    @apply px-8 py-4 lg:px-[8vw] xl:px-[20vw];
   }
 
   .flex-default {
     @apply flex justify-between items-center;
+  }
+
+  .collection {
+    @apply flex flex-wrap gap-6 my-11 justify-center;
+  }
+
+  .cta {
+    @apply bg-primary text-white;
+  }
+
+  .cta .btn {
+    @apply bg-white text-primary;
   }
 }

@@ -7,7 +7,7 @@ import image4 from "../assets/intro/image 4.svg";
 
 const IntroSect = () => {
   return (
-    <section className="flex-default layout gap-20">
+    <section className="flex-default layout" id="intro">
       <div className="text-content">
         <h1 className="lg-text">
           Rent a <span>Place</span> away from <span>Home</span> in the{" "}

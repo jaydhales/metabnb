@@ -14,10 +14,15 @@ module.exports = {
       },
       borderRadius: {
         lg: "10px",
+        xl: "15px",
       },
       screens: {
+        xl: "2000px",
         lg: "1200px",
         md: "800px",
+      },
+      fontFamily: {
+        rose: ["Red Rose", "cursive"],
       },
     },
   },

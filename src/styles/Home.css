@@ -10,22 +10,50 @@
   }
 
   .text-content {
-    @apply w-3/5 grid gap-12;
+    @apply grid gap-12;
   }
 
-  .img-content {
-    @apply flex gap-2 w-2/5;
+  #intro {
+    @apply gap-20;
   }
 
-  .img-content div {
+  #intro .text-content {
+    @apply w-1/2 lg:w-3/5;
+  }
+
+  #intro .img-content {
+    @apply flex gap-2 w-1/2 lg:w-2/5;
+  }
+
+  #intro .img-content div {
     @apply w-full;
   }
 
-  .img-content object {
+  #intro .img-content object {
     @apply my-2 w-full;
   }
 
   .search-input {
     @apply p-4 w-full focus-within:outline-none border-line border rounded-l-lg;
+  }
+
+  #cta {
+    @apply mb-0 bg-primary text-white;
+  }
+
+  #cta .text-content {
+    @apply w-[400px] text-[18px];
+  }
+
+  #cta .btn {
+    @apply bg-white text-primary;
+  }
+
+  #cta .img-content {
+    @apply w-[700px] relative h-[570px] my-24;
+  }
+
+  #cta img {
+    @apply absolute;
   }
 }
