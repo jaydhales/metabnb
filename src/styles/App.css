@@ -23,6 +23,10 @@
     @apply font-bold;
   }
 
+  main {
+    @apply min-h-[40vh];
+  }
+
   .btn {
     @apply bg-primary px-6 py-4 rounded-lg text-white;
   }
