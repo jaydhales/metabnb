@@ -38,12 +38,4 @@
   .collection {
     @apply flex flex-wrap gap-6 my-11 justify-center;
   }
-
-  .cta {
-    @apply bg-primary text-white;
-  }
-
-  .cta .btn {
-    @apply bg-white text-primary;
-  }
 }

@@ -1,0 +1,28 @@
+@tailwind components;
+
+@layer components {
+  footer {
+    @apply bg-footer text-white;
+  }
+
+  .footer-main {
+    @apply flex justify-between;
+  }
+
+  .footer-icons {
+    @apply grid content-between;
+  }
+
+  .socials {
+    @apply flex gap-10 mt-4;
+  }
+
+  .footer-content {
+    @apply flex justify-between w-2/3;
+  }
+
+  .footer-content p {
+    @apply font-bold text-lg mb-6;
+  }
+
+}

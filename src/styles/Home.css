@@ -45,6 +45,7 @@
     @apply w-[400px] text-[18px];
   }
 
+  
   #cta .btn {
     @apply bg-white text-primary;
   }
