@@ -25,4 +25,8 @@
     @apply font-bold text-lg mb-6;
   }
 
+  nav {
+    @apply grid gap-4 text-[14px]
+  }
+
 }
