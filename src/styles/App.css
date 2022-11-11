@@ -11,12 +11,16 @@
     @apply block w-max;
   }
 
+  section {
+    @apply my-20;
+  }
+
   .btn {
     @apply bg-primary px-6 py-4 rounded-lg text-white;
   }
 
   .layout {
-    @apply px-8 py-11 lg:px-24;
+    @apply px-8 py-4 lg:px-24;
   }
 
   .flex-default {

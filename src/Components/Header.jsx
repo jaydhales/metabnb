@@ -6,7 +6,7 @@ import "../styles/Header.css";
 
 const Header = () => {
   return (
-    <header className="layout flex-default">
+    <header className="layout flex-default pt-11">
       <SvgImage data={Logo} customClass='logo' />
 
       <nav className="flex-default">

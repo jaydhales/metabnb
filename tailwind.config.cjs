@@ -7,6 +7,7 @@ module.exports = {
         primary: "#A02279",
         footer: "#1D1D1E",
         dark: "#434343",
+        line: "#A3A3A3",
         grey: "#D7D7D7",
         fade: "#4040404D",
         hover: "#CFD8DC",
@@ -16,7 +17,7 @@ module.exports = {
       },
       screens: {
         lg: "1200px",
-        md: '800px'
+        md: "800px",
       },
     },
   },
