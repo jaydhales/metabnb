@@ -1,9 +1,16 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import SvgImage from "../Components/SvgImage";
 import Card from "../Components/Card";
 import setting from "../assets/setting.svg";
+
 import "../styles/Place.css";
+import { useContext } from "react";
+import { MetaContext } from "../Contexts/MetaContext";
 
 const Place = () => {
+  const { placeData } = useContext(MetaContext);
+
   return (
     <section className="layout">
       <div className="flex-default filter-sort">
@@ -20,26 +27,16 @@ const Place = () => {
 
         <div className="sort flex-default">
           <p>Location</p>
-          <SvgImage data={setting} />
+          <div>
+            <img className="w-full" src={setting} />
+          </div>
         </div>
       </div>
 
       <div className="collection">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {placeData.map((src) => (
+          <Card src={src} key={src} />
+        ))}
       </div>
     </section>
   );

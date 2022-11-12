@@ -26,12 +26,12 @@ const IntroSect = () => {
 
       <div className="img-content">
         <div className="mt-[25%]">
-          <SvgImage data={image1} />
-          <SvgImage data={image2} />
+          <img className="mb-2" src={image1} />
+          <img src={image2} />
         </div>
         <div>
-          <SvgImage data={image3} />
-          <SvgImage data={image4} />
+          <img className="mb-2" src={image3} />
+          <img src={image4} />
         </div>
       </div>
     </section>

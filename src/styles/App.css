@@ -27,6 +27,10 @@
     @apply min-h-[40vh];
   }
 
+  object {
+    @apply w-0;
+  }
+
   .btn {
     @apply bg-primary px-6 py-4 rounded-lg text-white;
   }

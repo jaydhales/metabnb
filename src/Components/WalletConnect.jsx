@@ -25,17 +25,17 @@ const WalletConnect = () => {
 
           <div className="wallet flex-default">
             <div className="wall">
-              <SvgImage data={metamask} customClass="w-max" />
+              <img src={metamask} alt="" />
               <p>Metamask</p>
             </div>
-            <SvgImage data={caret} />
+            <img className="w-full" src={caret} />
           </div>
           <div className="wallet flex-default">
             <div className="wall">
-              <SvgImage data={walletConnect} customClass="w-max" />
+              <img src={walletConnect} alt="" />
               <p>WalletConnect</p>
             </div>
-            <SvgImage data={caret} />
+            <img className="w-full" src={caret} />
           </div>
         </div>
       </div>

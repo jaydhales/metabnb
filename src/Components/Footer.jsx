@@ -12,11 +12,11 @@ const Footer = () => {
     <footer className="layout pt-14">
       <div className="footer-main">
         <div className="footer-icons">
-          <SvgImage data={Logo} />
+          <img src={Logo} />
           <div className="socials">
-            <SvgImage data={facebook} />
-            <SvgImage data={instagram} />
-            <SvgImage data={twitter} />
+            <img src={facebook} />
+            <img src={instagram} />
+            <img src={twitter} />
           </div>
         </div>
 

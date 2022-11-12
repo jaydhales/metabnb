@@ -18,11 +18,11 @@
   }
 
   #intro .text-content {
-    @apply w-1/2 lg:w-3/5;
+    @apply w-1/2 lg:w-3/5 xl:w-1/2;
   }
 
   #intro .img-content {
-    @apply flex gap-2 w-1/2 lg:w-2/5;
+    @apply flex gap-2 w-1/2 lg:w-2/5 xl:w-1/2;
   }
 
   #intro .img-content div {
@@ -42,16 +42,15 @@
   }
 
   #cta .text-content {
-    @apply w-[400px] text-[18px];
+    @apply w-[400px] text-[18px]  xl:w-1/2;
   }
 
-  
   #cta .btn {
     @apply bg-white text-primary;
   }
 
   #cta .img-content {
-    @apply w-[700px] relative h-[570px] my-24;
+    @apply w-[700px] relative h-[570px] my-24 m-auto;
   }
 
   #cta img {

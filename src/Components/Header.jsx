@@ -12,7 +12,9 @@ const Header = () => {
 
   return (
     <header className="layout flex-default pt-11">
-      <SvgImage data={Logo} customClass="logo" />
+      <div>
+        <img className="w-full" src={Logo} />
+      </div>
 
       <nav className="flex-default">
         <NavLink to="/"> Home</NavLink>

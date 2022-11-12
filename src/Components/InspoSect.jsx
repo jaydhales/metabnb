@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { MetaContext } from "../Contexts/MetaContext";
 import Card from "./Card";
 
 const InspoSect = () => {
+  const { placeData } = useContext(MetaContext);
+
   return (
     <section className="layout">
       <h2 className="text-5xl text-center font-bold text-black">
@@ -8,30 +12,9 @@ const InspoSect = () => {
       </h2>
 
       <div className="collection">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {placeData.map((src) => (
+          <Card src={src} key={src} />
+        ))}
       </div>
     </section>
   );
