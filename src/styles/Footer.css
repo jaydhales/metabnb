@@ -26,7 +26,7 @@
   }
 
   nav {
-    @apply grid gap-4 text-[14px]
+    @apply grid gap-4 text-[14px];
   }
 
 }

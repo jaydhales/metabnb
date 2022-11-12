@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import SvgImage from "./SvgImage";
 import Search from "./Search";
 import image1 from "../assets/intro/image 1.svg";

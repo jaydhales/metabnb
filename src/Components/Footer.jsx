@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import SvgImage from "../Components/SvgImage.jsx";
 import Logo from "../assets/footer-logo.svg";
 import facebook from "../assets/socials/facebook.svg";

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -14,6 +15,7 @@ module.exports = {
       },
       borderRadius: {
         lg: "10px",
+        llg: "12px",
         xl: "15px",
       },
       screens: {

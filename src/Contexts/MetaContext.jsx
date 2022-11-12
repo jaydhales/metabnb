@@ -1,9 +1,19 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 const MetaContext = createContext();
 
 const MetaContextProvider = ({ children }) => {
-  return <MetaContext.Provider value={{}}>{children}</MetaContext.Provider>;
+  const [showWalletConnect, setShowWalletConnect] = useState(false);
+  return (
+    <MetaContext.Provider
+      value={{
+        showWalletConnect,
+        setShowWalletConnect,
+      }}
+    >
+      {children}
+    </MetaContext.Provider>
+  );
 };
 
 export { MetaContext, MetaContextProvider };

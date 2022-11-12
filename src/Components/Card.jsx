@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import SvgImage from "./SvgImage";
 import img from "../assets/collections/img.svg";
 import stars from "../assets/five-stars.svg";

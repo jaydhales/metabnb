@@ -1,13 +1,18 @@
+/* eslint-disable no-unused-vars */
 import SvgImage from "../Components/SvgImage.jsx";
 import Logo from "../assets/header-logo.svg";
 import { NavLink } from "react-router-dom";
 
 import "../styles/Header.css";
+import { useContext } from "react";
+import { MetaContext } from "../Contexts/MetaContext.jsx";
 
 const Header = () => {
+  const { showWalletConnect, setShowWalletConnect } = useContext(MetaContext);
+
   return (
     <header className="layout flex-default pt-11">
-      <SvgImage data={Logo} customClass='logo' />
+      <SvgImage data={Logo} customClass="logo" />
 
       <nav className="flex-default">
         <NavLink to="/"> Home</NavLink>
@@ -16,7 +21,11 @@ const Header = () => {
         <NavLink to="/community">Community</NavLink>
       </nav>
 
-      <a className="btn" href="#">
+      <a
+        className="btn"
+        href="#"
+        onClick={(e) => setShowWalletConnect(!showWalletConnect)}
+      >
         Connect wallet
       </a>
     </header>
