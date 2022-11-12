@@ -11,7 +11,7 @@ module.exports = {
         line: "#A3A3A3",
         grey: "#D7D7D7",
         fade: "#4040404D",
-        hover: "#CFD8DC",
+        hover: "#F8F9FA",
       },
       borderRadius: {
         lg: "10px",
