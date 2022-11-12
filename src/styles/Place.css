@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+  .filter-sort {
+    @apply w-[95%];
+  }
+
+  .filter {
+    @apply gap-12;
+  }
+
+  .sort {
+    @apply border-line border p-4 rounded-lg gap-10;
+  }
+}

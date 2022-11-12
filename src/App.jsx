@@ -3,6 +3,7 @@ import Home from "./Pages/Home.jsx";
 import Place from "./Pages/Place.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 import Header from "./Components/Header.jsx";
+import WalletConnect from "./Components/WalletConnect.jsx";
 import Footer from "./Components/Footer.jsx";
 
 import "./styles/App.css";
@@ -18,6 +19,8 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+
+      <WalletConnect />
 
       <Footer />
     </div>

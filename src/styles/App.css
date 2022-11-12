@@ -6,7 +6,7 @@
 
 @layer components {
   body {
-    @apply bg-white text-dark font-rose;
+    @apply bg-white text-dark font-rose relative;
   }
 
   a {
@@ -32,7 +32,7 @@
   }
 
   .layout {
-    @apply px-8 py-4 lg:px-[8vw] xl:px-[20vw];
+    @apply px-8 py-4 lg:px-[7vw] xl:px-[20vw];
   }
 
   .flex-default {
