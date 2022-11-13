@@ -10,7 +10,7 @@
   }
 
   .nav-box {
-    @apply invisible w-0 h-0 md:visible md:h-max md:w-max lg:w-1/2 flex justify-between md:gap-[10vw] lg:gap-0;
+    @apply invisible w-0 h-0 md:visible md:h-auto md:w-max lg:w-2/3 flex justify-between md:gap-[10vw] lg:gap-0;
   }
 
   #nav-active {
@@ -29,7 +29,7 @@
     @apply md:hidden;
   }
 
-  nav {
-    @apply md:gap-6 lg:gap-12 lg:-translate-x-1/2;
+  header nav {
+    @apply grid gap-4 md:gap-6 lg:gap-12 ;
   }
 }

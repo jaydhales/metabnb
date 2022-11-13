@@ -2,7 +2,7 @@
 
 @layer components {
   .lg-text {
-    @apply text-[45px] md:text-[56px];
+    @apply text-[45px] lg:text-[56px];
   }
 
   .lg-text span {
@@ -26,7 +26,7 @@
   }
 
   #intro .img-content div {
-    @apply w-max;
+    @apply md:w-max;
   }
 
   #intro .img-content object {

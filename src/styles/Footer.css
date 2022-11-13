@@ -5,28 +5,35 @@
     @apply bg-footer text-white;
   }
 
+  footer * {
+    @apply text-center md:text-left;
+  }
+
   .footer-main {
-    @apply flex justify-between;
+    @apply md:flex justify-between;
   }
 
   .footer-icons {
-    @apply grid content-between;
+    @apply grid mx-auto mb-10  w-max md:m-0 md:content-between;
   }
 
   .socials {
-    @apply flex gap-10 mt-4;
+    @apply flex gap-10 my-4 mx-auto  md:m-0;
   }
 
   .footer-content {
-    @apply flex justify-between w-2/3;
+    @apply flex justify-between flex-col gap-8 md:flex-row md:w-2/3;
   }
 
   .footer-content p {
     @apply font-bold text-lg mb-6;
   }
 
-  nav {
-    @apply grid gap-4 text-[14px];
+  .links {
+    @apply md:flex-1;
   }
 
+  footer nav {
+    @apply grid gap-4 text-[14px];
+  }
 }
