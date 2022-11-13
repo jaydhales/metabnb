@@ -6,7 +6,7 @@ import Opensea from "../assets/sponsors/opensea.svg";
 
 const SponsorBand = () => {
   return (
-    <section className="flex-default bg-primary layout">
+    <section className="grid gap-6 place-content-center md:flex-default  bg-primary layout ">
       <img src={MbToken} />
       <img src={Metamask} />
       <img src={Opensea} />
