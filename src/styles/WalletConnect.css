@@ -2,11 +2,11 @@
 
 @layer components {
   aside {
-    @apply fixed top-0 left-0 bg-fade w-screen h-screen grid place-content-center;
+    @apply fixed top-0 left-0 p-8 bg-fade w-screen h-screen flex items-center;
   }
 
   .wallet-container {
-    @apply bg-white w-[600px] rounded-2xl;
+    @apply bg-white md:w-[600px] mx-auto rounded-2xl;
   }
 
   .head {
@@ -23,5 +23,9 @@
 
   .wall {
     @apply flex gap-4 items-center;
+  }
+
+  .wall p {
+    @apply text-clip overflow-hidden mr-8;
   }
 }

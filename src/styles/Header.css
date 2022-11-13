@@ -2,7 +2,7 @@
 
 @layer components {
   header {
-    @apply backdrop-blur fixed w-screen top-0 gap-8 md:static md:mt-8;
+    @apply backdrop-blur fixed w-full top-0 gap-8 md:static md:mt-8;
   }
 
   .logo {
