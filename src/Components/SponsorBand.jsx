@@ -7,9 +7,9 @@ import Opensea from "../assets/sponsors/opensea.svg";
 const SponsorBand = () => {
   return (
     <section className="grid gap-6 place-content-center md:flex-default  bg-primary layout ">
-      <img src={MbToken} />
-      <img src={Metamask} />
-      <img src={Opensea} />
+      <img src={MbToken} className="w-[240px]" />
+      <img src={Metamask} className="w-[240px]" />
+      <img src={Opensea} className="w-[240px]" />
     </section>
   );
 };
