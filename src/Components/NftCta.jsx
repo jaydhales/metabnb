@@ -1,10 +1,8 @@
-import imageTop from "../assets/cta/image-t.png";
-import imageBL from "../assets/cta/image-bl.png";
-import imageBR from "../assets/cta/image-br.png";
+import cta from "../assets/cta.png";
 
 const NftCta = () => {
   return (
-    <section className="flex-default layout" id="cta">
+    <section className="md:flex-default layout" id="cta">
       <div className="text-content">
         <h2 className="text-5xl">Metabnb NFTs </h2>
 
@@ -20,9 +18,7 @@ const NftCta = () => {
       </div>
 
       <div className="img-content">
-        <img src={imageTop} alt="" className="top-0 right-5" />
-        <img src={imageBL} alt="" className="bottom-3.5 left-0" />
-        <img src={imageBR} alt="" className="bottom-0 right-0" />
+        <img src={cta} alt="" className="w-full" />
       </div>
     </section>
   );

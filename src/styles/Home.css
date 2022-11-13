@@ -14,7 +14,7 @@
   }
 
   #intro {
-    @apply gap-8 md:gap-20 flex-col-reverse md:flex-row text-center md:text-left;
+    @apply gap-8 md:gap-20 flex-col-reverse md:flex-row text-center md:text-left  xl:justify-center;
   }
 
   #intro .text-content {
@@ -22,11 +22,11 @@
   }
 
   #intro .img-content {
-    @apply flex gap-2 md:w-1/2 lg:w-2/5 xl:w-1/2;
+    @apply flex gap-2 md:w-1/2 lg:w-2/5 xl:w-max;
   }
 
   #intro .img-content div {
-    @apply w-full;
+    @apply w-max;
   }
 
   #intro .img-content object {
@@ -38,11 +38,11 @@
   }
 
   #cta {
-    @apply mb-0 bg-primary text-white;
+    @apply py-16 mb-0 bg-primary text-white text-center md:text-left justify-center;
   }
 
   #cta .text-content {
-    @apply w-[400px] text-[18px]  xl:w-1/2;
+    @apply md:w-[400px] text-[18px];
   }
 
   #cta .btn {
@@ -50,10 +50,6 @@
   }
 
   #cta .img-content {
-    @apply w-[700px] relative h-[570px] my-24 m-auto;
-  }
-
-  #cta img {
-    @apply absolute;
+    @apply my-24;
   }
 }
