@@ -28,14 +28,14 @@ const WalletConnect = () => {
               <img src={metamask} alt="" />
               <p>Metamask</p>
             </div>
-            <img className="w-full" src={caret} />
+            <img src={caret} />
           </div>
           <div className="wallet flex-default">
             <div className="wall">
               <img src={walletConnect} alt="" />
               <p>WalletConnect</p>
             </div>
-            <img className="w-full" src={caret} />
+            <img src={caret} />
           </div>
         </div>
       </div>

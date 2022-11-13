@@ -10,7 +10,7 @@
   }
 
   a {
-    @apply block w-max;
+    @apply block md:w-max;
   }
 
   section {

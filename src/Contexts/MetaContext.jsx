@@ -1,11 +1,14 @@
 import { createContext, useState, useEffect } from "react";
 
+
 const MetaContext = createContext();
 
 const MetaContextProvider = ({ children }) => {
   const [showWalletConnect, setShowWalletConnect] = useState(false);
+  const [navIsActive, setNavIsActive] = useState(false);
 
   const [placeData, setPlaceData] = useState([]);
+  
 
   useEffect(() => {
     const data = [];
@@ -22,6 +25,8 @@ const MetaContextProvider = ({ children }) => {
         showWalletConnect,
         setShowWalletConnect,
         placeData,
+        navIsActive,
+        setNavIsActive,
       }}
     >
       {children}

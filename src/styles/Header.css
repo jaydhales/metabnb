@@ -2,14 +2,34 @@
 
 @layer components {
   header {
-    @apply gap-8;
+    @apply backdrop-blur fixed w-screen top-0 gap-8 md:static md:mt-8;
   }
 
   .logo {
     @apply w-36 lg:w-max;
   }
 
+  .nav-box {
+    @apply invisible w-0 h-0 md:visible md:h-max md:w-max lg:w-1/2 flex justify-between md:gap-[10vw] lg:gap-0;
+  }
+
+  #nav-active {
+    @apply visible w-4/5  h-max m-4 rounded-lg shadow-lg p-4 absolute block top-full bg-white;
+  }
+
+  #nav-active nav {
+    @apply py-8 w-full place-content-center;
+  }
+
+  #nav-active a {
+    @apply text-center;
+  }
+
+  .toggle-btn {
+    @apply md:hidden;
+  }
+
   nav {
-    @apply invisible w-0 md:visible md:w-max md:gap-6 lg:gap-12;
+    @apply md:gap-6 lg:gap-12 lg:-translate-x-1/2;
   }
 }
