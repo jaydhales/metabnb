@@ -2,7 +2,7 @@
 
 @layer components {
   .lg-text {
-    @apply text-[56px];
+    @apply text-[45px] md:text-[56px];
   }
 
   .lg-text span {
@@ -14,15 +14,15 @@
   }
 
   #intro {
-    @apply gap-20;
+    @apply gap-8 md:gap-20 flex-col-reverse md:flex-row text-center md:text-left;
   }
 
   #intro .text-content {
-    @apply w-1/2 lg:w-3/5 xl:w-1/2;
+    @apply md:w-1/2 lg:w-3/5 xl:w-1/2;
   }
 
   #intro .img-content {
-    @apply flex gap-2 w-1/2 lg:w-2/5 xl:w-1/2;
+    @apply flex gap-2 md:w-1/2 lg:w-2/5 xl:w-1/2;
   }
 
   #intro .img-content div {
@@ -34,7 +34,7 @@
   }
 
   .search-input {
-    @apply p-4 w-full focus-within:outline-none border-line border rounded-l-lg;
+    @apply p-4 w-full focus-within:outline-none border-line border rounded-t-lg  md:rounded-tr-none md:rounded-l-lg;
   }
 
   #cta {

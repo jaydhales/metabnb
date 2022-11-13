@@ -25,7 +25,7 @@ const IntroSect = () => {
       </div>
 
       <div className="img-content">
-        <div className="mt-[25%]">
+        <div className="md:mt-[25%]">
           <img className="mb-2" src={image1} />
           <img src={image2} />
         </div>
