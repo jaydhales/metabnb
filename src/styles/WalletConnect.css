@@ -2,7 +2,7 @@
 
 @layer components {
   aside {
-    @apply fixed top-0 left-0 p-8 bg-fade w-screen h-screen flex items-center;
+    @apply fixed top-0 left-0 p-8 bg-fade w-screen h-screen flex items-center z-40;
   }
 
   .wallet-container {

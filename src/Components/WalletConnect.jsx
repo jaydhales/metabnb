@@ -4,11 +4,16 @@ import SvgImage from "./SvgImage";
 import metamask from "../assets/metamask.svg";
 import walletConnect from "../assets/walletConnect.svg";
 import caret from "../assets/caret.svg";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { MetaContext } from "../Contexts/MetaContext";
 
 const WalletConnect = () => {
-  const { setShowWalletConnect } = useContext(MetaContext);
+  const { showWalletConnect, setShowWalletConnect, setNavIsActive } =
+    useContext(MetaContext);
+
+  useEffect(() => {
+    setNavIsActive(false);
+  }, [showWalletConnect]);
 
   return (
     <aside>
