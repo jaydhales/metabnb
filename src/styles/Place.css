@@ -2,19 +2,19 @@
 
 @layer components {
   .filter-sort {
-    @apply w-[95%];
+    @apply lg:w-[95%] gap-4 flex-wrap;
   }
 
   #filter {
-    @apply gap-12 flex-wrap hidden md:flex;
+    @apply gap-6 lg:gap-12 flex-wrap hidden md:flex w-2/3 lg:w-max;
   }
 
   .filter-mobile {
-    @apply md:hidden border-line border p-4 rounded-lg;
+    @apply md:hidden border-line border p-4 rounded-lg w-full sm:w-max;
   }
 
   .filter-mobile select {
-    @apply bg-transparent;
+    @apply bg-transparent w-full;
   }
 
   select:focus-visible {
@@ -22,6 +22,6 @@
   }
 
   .sort {
-    @apply border-line border p-4 rounded-lg gap-10;
+    @apply border-line border p-4 rounded-lg gap-10 w-full sm:w-max;
   }
 }

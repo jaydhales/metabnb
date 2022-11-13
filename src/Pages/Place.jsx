@@ -11,7 +11,7 @@ const Place = () => {
   return (
     <section className="layout">
       <div className="flex-default filter-sort">
-        <div className="flex-default" id="filter">
+        <div className="" id="filter">
           <a href="#">Restaurant</a>
           <a href="#">Cottage</a>
           <a href="#">Castle</a>
