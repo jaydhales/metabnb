@@ -5,8 +5,24 @@
     @apply w-[95%];
   }
 
-  .filter {
-    @apply gap-12;
+  #filter {
+    @apply gap-12 flex-wrap hidden md:flex;
+  }
+
+  .filter-mobile {
+    @apply md:hidden relative;
+  }
+
+  .filter-mobile select {
+    @apply border-line border p-4 pr-8 bg-transparent rounded-lg;
+  }
+
+  .filter-mobile img {
+    @apply absolute top-4 right-1 bg-white pr-3;
+  }
+
+  select:focus-visible {
+    @apply outline-none;
   }
 
   .sort {

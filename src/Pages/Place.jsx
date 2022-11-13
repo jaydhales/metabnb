@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-import SvgImage from "../Components/SvgImage";
 import Card from "../Components/Card";
 import setting from "../assets/setting.svg";
 
@@ -14,7 +11,7 @@ const Place = () => {
   return (
     <section className="layout">
       <div className="flex-default filter-sort">
-        <nav className="flex-default filter">
+        <div className="flex-default" id="filter">
           <a href="#">Restaurant</a>
           <a href="#">Cottage</a>
           <a href="#">Castle</a>
@@ -23,13 +20,26 @@ const Place = () => {
           <a href="#">Cabins</a>
           <a href="#">Off-grid</a>
           <a href="#">Farm</a>
-        </nav>
+        </div>
+
+        <div className="filter-mobile">
+          <select name="filter">
+            <option value="Restaurant">Restaurant</option>
+            <option value="Cottage">Cottage</option>
+            <option value="Castle">Castle</option>
+            <option value="Fantast city">Fantast city</option>
+            <option value="Beach">Beach</option>
+            <option value="Cabins">Cabins</option>
+            <option value="Off-grid">Off-grid</option>
+            <option value="Farm">Farm</option>
+          </select>
+          <img src={setting} />
+        </div>
 
         <div className="sort flex-default">
           <p>Location</p>
-          <div>
-            <img className="w-full" src={setting} />
-          </div>
+
+          <img src={setting} />
         </div>
       </div>
 
