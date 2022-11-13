@@ -33,7 +33,6 @@ const Place = () => {
             <option value="Off-grid">Off-grid</option>
             <option value="Farm">Farm</option>
           </select>
-          <img src={setting} />
         </div>
 
         <div className="sort flex-default">

@@ -2,7 +2,7 @@
 
 @layer components {
   header {
-    @apply bg-[#fff4] backdrop-blur fixed w-full top-0 gap-8 md:static md:mt-8;
+    @apply bg-[#fff4] backdrop-blur fixed w-full top-0 gap-8 md:static md:mt-8 z-30;
   }
 
   .logo {
@@ -30,6 +30,6 @@
   }
 
   header nav {
-    @apply grid gap-4 md:gap-6 lg:gap-12 ;
+    @apply grid gap-4 md:gap-6 lg:gap-12;
   }
 }

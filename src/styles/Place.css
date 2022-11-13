@@ -10,15 +10,11 @@
   }
 
   .filter-mobile {
-    @apply md:hidden relative;
+    @apply md:hidden border-line border p-4 rounded-lg;
   }
 
   .filter-mobile select {
-    @apply border-line border p-4 pr-8 bg-transparent rounded-lg;
-  }
-
-  .filter-mobile img {
-    @apply absolute top-4 right-1 bg-white pr-3;
+    @apply bg-transparent;
   }
 
   select:focus-visible {
