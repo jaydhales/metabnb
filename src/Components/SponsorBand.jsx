@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import SvgImage from "./SvgImage";
 import MbToken from "../assets/sponsors/mbtoken.svg";
 import Metamask from "../assets/sponsors/metamask.svg";
 import Opensea from "../assets/sponsors/opensea.svg";

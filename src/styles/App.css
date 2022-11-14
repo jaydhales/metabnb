@@ -32,7 +32,7 @@
   }
 
   .btn {
-    @apply bg-primary px-6 py-4 rounded-lg text-white;
+    @apply bg-primary transition hover:scale-[1.02] px-6 py-4 rounded-lg text-white;
   }
 
   .layout {

@@ -28,4 +28,21 @@
   .wall p {
     @apply text-clip overflow-hidden mr-8;
   }
+
+  .close-btn {
+    @apply w-6 h-6 relative transition hover:opacity-70;
+  }
+
+  .close-btn::before,
+  .close-btn::after {
+    @apply content-[''] w-6 h-[2px] absolute bg-black z-50 rounded-full top-3;
+  }
+
+  .close-btn::after {
+    @apply rotate-45;
+  }
+
+  .close-btn::before {
+    @apply -rotate-45;
+  }
 }

@@ -16,6 +16,7 @@ const App = () => {
   const location = useLocation();
   const [width, setWidth] = useState(window.innerWidth);
 
+  // Get screen width on window resize
   useEffect(() => {
     const resizeListener = () => {
       setWidth(window.innerWidth);
@@ -28,12 +29,16 @@ const App = () => {
     };
   }, []);
 
+  // Close mobile nav when width is above 800px and path changes
   useEffect(() => {
     setNavIsActive(false);
   }, [width > 800]);
 
   useEffect(() => {
     setNavIsActive(false);
+
+    // move view back to top
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (

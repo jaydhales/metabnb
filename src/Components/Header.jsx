@@ -1,8 +1,6 @@
-/* eslint-disable no-unused-vars */
-import SvgImage from "../Components/SvgImage.jsx";
 import Logo from "../assets/header-logo.svg";
 import { NavLink } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { MetaContext } from "../Contexts/MetaContext.jsx";
 
 import "../styles/hamburger.css";

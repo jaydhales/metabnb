@@ -1,11 +1,8 @@
-/* eslint-disable no-unused-vars */
-import SvgImage from "./SvgImage";
-import img from "../assets/collections/img.svg";
 import stars from "../assets/five-stars.svg";
 
 const Card = ({ src }) => {
   return (
-    <div className="border-line border rounded-xl p-4 w-[280px] transition hover:shadow-xl hover:scale-[1.02]">
+    <div className="border-line border rounded-xl p-4 w-[300px] transition hover:shadow-xl hover:scale-[1.02]">
       <div>
         <img src={src} alt="" className="w-full" />
       </div>

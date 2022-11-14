@@ -1,11 +1,10 @@
-/* eslint-disable no-unused-vars */
-import "../styles/WalletConnect.css";
-import SvgImage from "./SvgImage";
 import metamask from "../assets/metamask.svg";
 import walletConnect from "../assets/walletConnect.svg";
 import caret from "../assets/caret.svg";
 import { useContext, useEffect } from "react";
 import { MetaContext } from "../Contexts/MetaContext";
+
+import "../styles/WalletConnect.css";
 
 const WalletConnect = () => {
   const { showWalletConnect, setShowWalletConnect, setNavIsActive } =
@@ -20,9 +19,11 @@ const WalletConnect = () => {
       <div className="wallet-container">
         <div className="flex-default head">
           <p>Connect Wallet</p>
-          <a href="#" onClick={(e) => setShowWalletConnect(false)}>
-            X
-          </a>
+          <a
+            href="#"
+            className="close-btn"
+            onClick={(e) => setShowWalletConnect(false)}
+          ></a>
         </div>
 
         <div className="content">
